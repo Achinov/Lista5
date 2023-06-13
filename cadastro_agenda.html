@@ -4,52 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
     <h1>Cadastro de Usuarios para agenda do murilo</h1>
     <form action="cadastro_agenda.php" method="POST"
     enctype="multipart/form-data" >
-        <div>
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome">
-        </div>
-        <div>
-            <label for="apelido">Apelido</label>
-            <input type="text" name="apelido" id="apelido">
-        </div>
-        <div>
-            <label for="endereco">Endereço</label>
-            <input type="text" name="endereco" id="endereco">
-        </div>
-        <div>
-            <label for="bairro">Bairro</label>
-            <input type="text" name="bairro" id="bairro">
-        </div>
-        <div>
-            <label for="cidade">Cidade</label>
-            <input type="text" name="cidade" id="cidade">
-        </div>
-        <div>
-            <label for="estado">Estado</label>
-            <input type="text" name="estado" id="estado">
-        </div>
-        <div>
-            <label for="fone">Telefone</label>
-            <input type="tel" name="fone" id="fone" 
-            placeholder="Formato (18) 9999-8888"
-            pattern="\([0-9]{2}\)([9]{1})?[0-9]{4-5}-[0-9]{4}">
-        </div>
-        <div>
-            <label for="cel">Celular</label>
-            <input type="tel" name="cel" id="cel" 
-            placeholder="Formato (18) 9999-8888"
-            pattern="\([0-9]{2}\)([9]{1})?[0-9]{4-5}-[0-9]{4}">
-        </div>
-        <div>
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email">
-        </div>
+    <div class="col-4">
+        <label for="exampleInputNome1">Nome</label>
+        <input type="text" class="form-control" id="nome" aria-describedby="nomeHelp" placeholder="Seu nome">
+      </div>
+
+    <div class="col-4"> 
+      <label for="exampleInputApelido1">Apelido</label>
+      <input type="text" class="form-control" id="apelido" aria-describedby="apelidoHelp" placeholder="Seu apelido">
+    </div>
+
+    <div class="col-4"> 
+      <label for="exampleInputEndereco1">Endereço</label>
+      <input type="text" class="form-control" id="endereco" aria-describedby="enderecoHelp" placeholder="Endereço">
+    </div>
+
+    <div class="col-4"> 
+        <label for="exampleInputBairro1">Bairro</label>
+        <input type="text" class="form-control" id="bairro" aria-describedby="bairroHelp" placeholder="Bairro">
+      </div>
+
+      <div class="col-4"> 
+        <label for="exampleInputCidade">Cidade</label>
+        <input type="text" class="form-control" id="cidade" aria-describedby="cidadeHelp" placeholder="Cidade">
+      </div>
+
+      <div class="col-4"> 
+        <label for="exampleInputEstado1">Estado</label>
+        <input type="text" class="form-control" id="estado" aria-describedby="estadoHelp" placeholder="Estado">
+      </div>
+
+      <div class="col-4"> 
+        <label for="exampleInputTelefone1">Telefone</label>
+        <input type="tel" class="form-control" id="fone" aria-describedby="foneHelp" placeholder="Formato (18) 9999-8888"
+        pattern="\([0-9]{2}\)([9]{1})?[0-9]{4-5}-[0-9]{4}">
+      </div>
+
+      <div class="col-4"> 
+        <label for="exampleInputCelular1">Celular</label>
+        <input type="tel" class="form-control" id="cel" aria-describedby="celHelp" placeholder="Formato (18) 9999-8888"
+        pattern="\([0-9]{2}\)([9]{1})?[0-9]{4-5}-[0-9]{4}">
+      </div>
+
+        <div class="col-4">
+            <label for="exampleInputEmail1">Endereço de email</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="example@email.com">
+            <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+          </div>
 
        
         <div>
